@@ -115,46 +115,40 @@
 
 
 @article{inostroza_2023_robust_localization,
-  author = {Felipe Inostroza and Martin Adams},
-  title = {Combining the SLAM back and front ends with a joint vector-set
-           distribution},
-  journal = {The International Journal of Robotics Research},
-  volume = {0},
-  number = {0},
-  pages = {02783649241303770},
-  year = {0},
-  doi = {10.1177/02783649241303770},
-  URL = { https://doi.org/10.1177/02783649241303770 },
-  eprint = { https://doi.org/10.1177/02783649241303770 },
-  abstract = { The joint optimization of map management and map feature to
-              measurement association, together with the trajectory and map
-              states, within a single, unified, Bayesian, feature-based,
-              simultaneous localization and mapping (SLAM) solution is addressed
-              in this article. Remarkable progress in feature-based SLAM has been
-              made in which, given data association, the SLAM problem can be
-              solved by use of nonlinear least squares solvers, often referred to
-              as the SLAM back-end. These methods rely on external methods to
-              solve both the data association and map management problems, which
-              are collectively incorporated into the SLAM front-end. SLAM
-              convergence failures are common when these front-end routines fail,
-              particularly when feature detection uncertainty increases.
-              Therefore, this article introduces Joint, Vector-Set SLAM
-              (JVS-SLAM), utilizing Bayes theorem to solve feature to measurement
-              association, map management, and SLAM itself jointly, thus
-              combining the SLAM back and front ends. Results will demonstrate
-              equivalent or superior SLAM performance to state-of-the-art
-              solutions, under varying odometry, spatial and detection
-              measurement uncertainties, without reliance on data association
-              decisions. Results are based on both simulations and the
-              challenging EuRoC data set, in which a drone undergoing high
-              accelerations, equipped with a stereo camera, performs SLAM. Since
-              JVS-SLAM jointly provides a solution to the map feature to
-              measurement association problem, its computational complexity is
-              comparable with multi-hypothesis based solutions. Parallels between
-              state-of-the-art map management and feature to measurement
-              association methods and the detection statistics used within
-              JVS-SLAM will be examined, with a view to reducing its complexity
-              in the future. },
+  AUTHOR = {Inostroza, Felipe and Parra-Tsunekawa, Isao and Ruiz-del-Solar,
+            Javier},
+  TITLE = {Robust Localization for Underground Mining Vehicles: An Application
+           in a Room and Pillar Mine},
+  JOURNAL = {Sensors},
+  VOLUME = {23},
+  YEAR = {2023},
+  NUMBER = {19},
+  ARTICLE-NUMBER = {8059},
+  URL = {https://www.mdpi.com/1424-8220/23/19/8059},
+  PubMedID = {37836889},
+  ISSN = {1424-8220},
+  ABSTRACT = {Most autonomous navigation systems used in underground mining
+              vehicles such as load–haul–dump (LHD) vehicles and trucks use 2D
+              light detection and ranging (LIDAR) sensors and 2D
+              representations/maps of the environment. In this article, we
+              propose the use of 3D LIDARs and existing 3D simultaneous
+              localization and mapping (SLAM) jointly with 2D mapping methods to
+              produce or update 2D grid maps of underground tunnels that may have
+              significant elevation changes. Existing mapping methods that only
+              use 2D LIDARs are shown to fail to produce accurate 2D grid maps of
+              the environment. These maps can be used for robust localization and
+              navigation in different mine types (e.g., sublevel stoping,
+              block/panel caving, room and pillar), using only 2D LIDAR sensors.
+              The proposed methodology was tested in the Werra Potash Mine
+              located at Philippsthal, Germany, under real operational
+              conditions. The obtained results show that the enhanced 2D
+              map-building method produces a superior mapping performance
+              compared with a 2D map generated without the use of the 3D
+              LIDAR-based mapping solution. The 2D map generated enables robust
+              2D localization, which was tested during the operation of an
+              autonomous LHD, performing autonomous navigation and autonomous
+              loading over extended periods of time.},
+  DOI = {10.3390/s23198059},
 }
 
 @book{books/sp/MullaneVAV11,
